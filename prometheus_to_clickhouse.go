@@ -69,7 +69,7 @@ func main() {
 			return
 		}
 
-		var req remote.WriteRequest
+		var req prompb.WriteRequest
 		if err := proto.Unmarshal(reqBuf, &req); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
 			return
