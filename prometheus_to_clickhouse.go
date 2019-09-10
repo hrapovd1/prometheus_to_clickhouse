@@ -14,7 +14,7 @@ import (
 	"github.com/kshvakov/clickhouse"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/storage/remote"
+	"github.com/prometheus/prometheus/prompb"
 )
 
 var (
